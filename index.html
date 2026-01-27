@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+<link rel="icon" href="./1.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البروفايل | زياد حسين</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { font-family: 'Cairo', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+        }
+        .skill-bar { animation: fillBar 1.5s ease-out forwards; }
+        @keyframes fillBar { from { width: 0; } }
+        .nav-link:hover { background: rgba(102, 126, 234, 0.2); }
+        .nav-link.active { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <img src="1.png" alt="Logo" class="w-12 h-12 rounded-full object-cover border-2 border-purple-500">
+                    <span class="text-xl font-bold gradient-text">زياد حسين</span>
+                </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Content -->
+    <section class="pt-28 pb-12">
+        <div class="container mx-auto px-6">
+            <!-- Header Card -->
+            <div class="bg-gray-800 rounded-3xl p-8 mb-8 border border-gray-700 card-hover">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <img src="1.jpg" alt="زياد حسين" class="w-40 h-40 rounded-full object-cover border-4 border-purple-500">
+                    <div class="text-center md:text-right">
+                        <h1 class="text-4xl font-bold mb-2">زياد حسين فوزي عبد السلام</h1>
+                        <p class="text-xl text-purple-400 mb-4">مصمم جرافيك</p>
+                        <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                            <span class="bg-gray-700 px-4 py-2 rounded-full text-sm">
+                                <i class="fas fa-birthday-cake ml-2 text-purple-400"></i>16 سنة
+                            </span>
+                            <span class="bg-gray-700 px-4 py-2 rounded-full text-sm">
+                                <i class="fas fa-graduation-cap ml-2 text-purple-400"></i>الصف الثاني الثانوي
+                            </span>
+                            <span class="bg-gray-700 px-4 py-2 rounded-full text-sm">
+                                <i class="fas fa-flask ml-2 text-purple-400"></i>علمي علوم
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Objective -->
+            <div class="bg-gray-800 rounded-3xl p-8 mb-8 border border-gray-700 card-hover">
+                <h2 class="text-2xl font-bold mb-4 flex items-center">
+                    <i class="fas fa-bullseye ml-3 text-purple-400"></i>الهدف الوظيفي
+                </h2>
+                <p class="text-gray-300 text-lg leading-relaxed">
+                    مصمم جرافيك شاب وطموح، أعمل في مجال التصميم أونلاين، أسعى لتطوير مهاراتي باستمرار وتقديم تصاميم إبداعية واحترافية تساعد العملاء على تحقيق أهدافهم التسويقية.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Skills -->
+                <div class="bg-gray-800 rounded-3xl p-8 border border-gray-700 card-hover">
+                    <h2 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-tools ml-3 text-purple-400"></i>المهارات
+                    </h2>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>تصميم السوشيال ميديا</span>
+                                <span class="text-purple-400">95%</span>
+                            </div>
+                            <div class="h-3 bg-gray-700 rounded-full overflow-hidden">
+                                <div class="skill-bar h-full gradient-bg rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>تصميم اللوجوهات</span>
+                                <span class="text-purple-400">85%</span>
+                            </div>
+                            <div class="h-3 bg-gray-700 rounded-full overflow-hidden">
+                                <div class="skill-bar h-full gradient-bg rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>البوسترات والبانرات</span>
+                                <span class="text-purple-400">90%</span>
+                            </div>
+                            <div class="h-3 bg-gray-700 rounded-full overflow-hidden">
+                                <div class="skill-bar h-full gradient-bg rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>الهوية البصرية</span>
+                                <span class="text-purple-400">80%</span>
+                            </div>
+                            <div class="h-3 bg-gray-700 rounded-full overflow-hidden">
+                                <div class="skill-bar h-full gradient-bg rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="bg-gray-800 rounded-3xl p-8 border border-gray-700 card-hover">
+                    <h2 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-briefcase ml-3 text-purple-400"></i>الخبرة
+                    </h2>
+                    <div class="relative border-r-2 border-purple-500 pr-8 space-y-8">
+                        <div class="relative">
+                            <div class="absolute -right-10 w-4 h-4 gradient-bg rounded-full"></div>
+                            <h3 class="text-lg font-bold">مصمم جرافيك - أونلاين</h3>
+                            <p class="text-purple-400 text-sm mb-2">2022 - الآن</p>
+                            <p class="text-gray-400">خبرة سنتين في مجال التصميم وتنفيذ تصاميم متنوعة</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -right-10 w-4 h-4 gradient-bg rounded-full"></div>
+                            <h3 class="text-lg font-bold">تصاميم مدرسية</h3>
+                            <p class="text-purple-400 text-sm mb-2">مستمر</p>
+                            <p class="text-gray-400">تنفيذ تصاميم متنوعة داخل المدرسة</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -right-10 w-4 h-4 gradient-bg rounded-full"></div>
+                            <h3 class="text-lg font-bold">مشاريع متنوعة</h3>
+                            <p class="text-purple-400 text-sm mb-2">مستمر</p>
+                            <p class="text-gray-400">التعامل مع متطلبات مختلفة وتحويل الأفكار إلى تصاميم</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="bg-gray-800 rounded-3xl p-8 border border-gray-700 card-hover">
+                    <h2 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-globe ml-3 text-purple-400"></i>اللغات
+                    </h2>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="text-center p-4 bg-gray-700 rounded-2xl">
+                            <div class="text-3xl mb-2">🇪🇬</div>
+                            <h3 class="font-bold">العربية</h3>
+                            <p class="text-sm text-purple-400">ممتاز</p>
+                        </div>
+                        <div class="text-center p-4 bg-gray-700 rounded-2xl">
+                            <div class="text-3xl mb-2">🇬🇧</div>
+                            <h3 class="font-bold">الإنجليزية</h3>
+                            <p class="text-sm text-purple-400">متوسط</p>
+                        </div>
+                        <div class="text-center p-4 bg-gray-700 rounded-2xl">
+                            <div class="text-3xl mb-2">🇩🇪</div>
+                            <h3 class="font-bold">الألمانية</h3>
+                            <p class="text-sm text-purple-400">مبتدئ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal Traits -->
+                <div class="bg-gray-800 rounded-3xl p-8 border border-gray-700 card-hover">
+                    <h2 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-star ml-3 text-purple-400"></i>الصفات الشخصية
+                    </h2>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 rounded-full">
+                            <i class="fas fa-check ml-2"></i>ملتزم
+                        </span>
+                        <span class="bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 rounded-full">
+                            <i class="fas fa-rocket ml-2"></i>طموح
+                        </span>
+                        <span class="bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 rounded-full">
+                            <i class="fas fa-bolt ml-2"></i>سريع التعلم
+                        </span>
+                        <span class="bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 rounded-full">
+                            <i class="fas fa-heart ml-2"></i>ضمير في الشغل
+                        </span>
+                        <span class="bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 rounded-full">
+                            <i class="fas fa-hands-helping ml-2"></i>بحب أساعد غيري
+                        </span>
+                        <span class="bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 rounded-full">
+                            <i class="fas fa-users ml-2"></i>روح الفريق
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="mt-8 bg-gray-800 rounded-3xl p-8 border border-gray-700 text-center card-hover">
+                <h2 class="text-2xl font-bold mb-6">
+                    <i class="fas fa-phone-alt ml-3 text-purple-400"></i>تواصل معي
+                </h2>
+                <a href="https://wa.me/201118033419" target="_blank" class="inline-flex items-center gap-3 gradient-bg px-8 py-4 rounded-full font-semibold text-lg hover:opacity-90 transition-all">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                    01118033419
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 md:py-8 border-t border-gray-700">
+        <div class="container mx-auto px-4 md:px-6 text-center">
+            <p class="text-gray-400 text-sm md:text-base">جميع الحقوق محفوظة © 2024 - زياد حسين</p>
+            <p class="text-gray-500 text-xs md:text-sm mt-2">
+                <i class="fas fa-phone ml-2"></i>01118033419
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
